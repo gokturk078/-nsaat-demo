@@ -314,15 +314,86 @@
             color: var(--primary-navy);
         }
 
-        .map-placeholder {
-            height: 400px;
-            background: var(--neutral-light);
+        /* Map Container Styles */
+        .map-container {
+            background: var(--neutral-white);
             border-radius: var(--radius-xl);
-            display: flex;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .map-header {
+            padding: var(--space-8);
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-navy) 0%, var(--primary-navy-dark) 100%);
+            color: var(--neutral-white);
+        }
+
+        .map-badge {
+            display: inline-flex;
             align-items: center;
+            gap: var(--space-2);
+            padding: var(--space-2) var(--space-4);
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: var(--radius-full);
+            font-size: var(--text-sm);
+            font-weight: var(--weight-medium);
+            margin-bottom: var(--space-4);
+        }
+
+        .map-badge svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .map-title {
+            font-family: var(--font-display);
+            font-size: var(--text-2xl);
+            font-weight: var(--weight-bold);
+            margin-bottom: var(--space-2);
+        }
+
+        .map-address {
+            font-size: var(--text-base);
+            opacity: 0.9;
+        }
+
+        .map-wrapper {
+            height: 400px;
+            position: relative;
+        }
+
+        .map-wrapper iframe {
+            position: absolute;
+            inset: 0;
+        }
+
+        .map-actions {
+            display: flex;
             justify-content: center;
-            color: var(--neutral-gray);
-            font-size: var(--text-lg);
+            gap: var(--space-4);
+            padding: var(--space-6);
+            background: var(--neutral-cream);
+        }
+
+        .map-actions .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-2);
+        }
+
+        @media (max-width: 640px) {
+            .map-actions {
+                flex-direction: column;
+            }
+
+            .map-actions .btn {
+                justify-content: center;
+            }
+
+            .map-wrapper {
+                height: 300px;
+            }
         }
     </style>
 </head>
@@ -551,19 +622,48 @@
             </div>
         </section>
 
-        <!-- Map Placeholder -->
+        <!-- Map Section - OpenStreetMap (Free, No API Key Required) -->
         <section class="section">
             <div class="container">
-                <div class="map-placeholder" data-aos="fade-up">
-                    <div style="text-align: center;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" style="margin-bottom: 16px;">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                            <circle cx="12" cy="10" r="3"></circle>
-                        </svg>
-                        <p>Harita - Maslak, İstanbul</p>
-                        <p style="font-size: 14px; opacity: 0.7;">Google Maps entegrasyonu için API anahtarı gereklidir
-                        </p>
+                <div class="map-container" data-aos="fade-up">
+                    <div class="map-header">
+                        <div class="map-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Ofis Konumumuz</span>
+                        </div>
+                        <h3 class="map-title">Maslak, İstanbul</h3>
+                        <p class="map-address">Büyükdere Caddesi No: 123, Sarıyer, İstanbul 34398</p>
+                    </div>
+                    <div class="map-wrapper">
+                        <iframe
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=29.01%2C41.10%2C29.03%2C41.12&layer=mapnik&marker=41.11%2C29.02"
+                            style="border: 0; width: 100%; height: 100%;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" title="Kara İnşaat Ofis Konumu">
+                        </iframe>
+                    </div>
+                    <div class="map-actions">
+                        <a href="https://www.openstreetmap.org/?mlat=41.11&mlon=29.02#map=15/41.11/29.02"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            Büyük Haritada Görüntüle
+                        </a>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=41.11,29.02" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+                            </svg>
+                            Yol Tarifi Al
+                        </a>
                     </div>
                 </div>
             </div>
