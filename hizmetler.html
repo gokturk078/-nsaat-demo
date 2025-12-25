@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizmetlerimiz | Kara İnşaat Mühendislik</title>
+    <meta name="description"
+        content="Ticari yapılar, lüks konut projeleri, altyapı mühendisliği, proje yönetimi ve danışmanlık hizmetleri. Kapsamlı inşaat çözümleri.">
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Ana içeriğe geç</a>
+
+    <!-- Navigation -->
+    <nav class="main-navigation scrolled" id="mainNav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-text">KARA İNŞAAT</span>
+                    <span class="logo-subtitle">Mühendislik</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+                <li><a href="projelerimiz.html" class="nav-link">Projelerimiz</a></li>
+                <li><a href="hizmetler.html" class="nav-link active">Hizmetler</a></li>
+                <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="tel:+905001234567" class="nav-phone">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    +90 (500) 123 45 67
+                </a>
+                <a href="iletisim.html" class="btn btn-primary btn-sm">Teklif Alın</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Menü"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="mobile-menu">
+            <div class="mobile-menu-header">
+                <span class="mobile-logo">KARA İNŞAAT</span>
+                <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Kapat">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-nav-link">Ana Sayfa</a>
+                <a href="hakkimizda.html" class="mobile-nav-link">Hakkımızda</a>
+                <a href="projelerimiz.html" class="mobile-nav-link">Projelerimiz</a>
+                <a href="hizmetler.html" class="mobile-nav-link">Hizmetler</a>
+                <a href="iletisim.html" class="mobile-nav-link">İletişim</a>
+            </nav>
+            <div class="mobile-menu-footer">
+                <a href="tel:+905001234567" class="mobile-phone-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    +90 (500) 123 45 67
+                </a>
+                <a href="iletisim.html" class="btn btn-primary btn-block">Teklif Alın</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <span class="section-subtitle">Çözümlerimiz</span>
+                <h1 class="section-title">Hizmetlerimiz</h1>
+                <nav class="breadcrumb">
+                    <a href="index.html">Ana Sayfa</a>
+                    <span>/</span>
+                    <span class="breadcrumb-current">Hizmetlerimiz</span>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Service 1: Commercial -->
+        <section class="section" id="ticari">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image" data-aos="fade-right">
+                        <img src="images/services/construction-site-action.jpg" alt="Ticari Yapılar" loading="lazy">
+                    </div>
+                    <div class="about-content" data-aos="fade-left">
+                        <span class="section-subtitle">Ticari Yapılar</span>
+                        <h2 class="section-title">Modern Ticari Kompleksler</h2>
+                        <p class="about-text">
+                            Yüksek katlı ofis binaları, alışveriş merkezleri ve karma kullanımlı projeler.
+                            Modern iş dünyasının ihtiyaçlarına uygun, sürdürülebilir ve verimli yapılar.
+                        </p>
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Yüksek Katlı Ofis Binaları</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Alışveriş Merkezleri</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Karma Kullanım Projeleri</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Otel ve Konaklama Tesisleri</span>
+                            </div>
+                        </div>
+                        <div class="about-cta">
+                            <a href="iletisim.html" class="btn btn-primary">Teklif Alın</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service 2: Residential -->
+        <section class="section bg-cream" id="konut">
+            <div class="container">
+                <div class="about-grid" style="direction: rtl;">
+                    <div class="about-image" data-aos="fade-left" style="direction: ltr;">
+                        <img src="images/projects/luxury-residential-complex.jpg" alt="Lüks Konut Projeleri"
+                            loading="lazy">
+                    </div>
+                    <div class="about-content" data-aos="fade-right" style="direction: ltr;">
+                        <span class="section-subtitle">Konut Projeleri</span>
+                        <h2 class="section-title">Lüks Yaşam Alanları</h2>
+                        <p class="about-text">
+                            Premium apartman kompleksleri, özel villalar ve kapalı site projeleri.
+                            Her detayı özenle tasarlanmış, modern ve konforlu yaşam mekanları.
+                        </p>
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Premium Rezidanslar</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Özel Tasarım Villalar</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Kapalı Site Projeleri</span>
+                            </div>
+                        </div>
+                        <div class="about-cta">
+                            <a href="iletisim.html" class="btn btn-primary">Teklif Alın</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service 3: Infrastructure -->
+        <section class="section" id="altyapi">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image" data-aos="fade-right">
+                        <img src="images/projects/infrastructure-bridge-project.jpg" alt="Altyapı Mühendisliği"
+                            loading="lazy">
+                    </div>
+                    <div class="about-content" data-aos="fade-left">
+                        <span class="section-subtitle">Altyapı Mühendisliği</span>
+                        <h2 class="section-title">Büyük Ölçekli Altyapı</h2>
+                        <p class="about-text">
+                            Köprüler, viyadükler, otoyollar ve yeraltı sistemleri.
+                            Şehirlerin geleceğini şekillendiren mega altyapı projeleri.
+                        </p>
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Köprüler ve Viyadükler</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Otoyol İnşaatları</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Yeraltı Sistemleri</span>
+                            </div>
+                        </div>
+                        <div class="about-cta">
+                            <a href="iletisim.html" class="btn btn-primary">Teklif Alın</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service 4: Project Management -->
+        <section class="section bg-cream" id="yonetim">
+            <div class="container">
+                <div class="about-grid" style="direction: rtl;">
+                    <div class="about-image" data-aos="fade-left" style="direction: ltr;">
+                        <img src="images/about/engineering-team-meeting.jpg" alt="Proje Yönetimi" loading="lazy">
+                    </div>
+                    <div class="about-content" data-aos="fade-right" style="direction: ltr;">
+                        <span class="section-subtitle">Proje Yönetimi</span>
+                        <h2 class="section-title">Profesyonel Danışmanlık</h2>
+                        <p class="about-text">
+                            Fizibilite çalışmaları, inşaat yönetimi ve kalite güvence hizmetleri.
+                            Projenizin her aşamasında profesyonel destek.
+                        </p>
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Fizibilite Çalışmaları</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>İnşaat Yönetimi</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Kalite Güvencesi</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>BIM Teknolojisi</span>
+                            </div>
+                        </div>
+                        <div class="about-cta">
+                            <a href="iletisim.html" class="btn btn-primary">Teklif Alın</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service 5: Renovation -->
+        <section class="section" id="yenileme">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image" data-aos="fade-right">
+                        <img src="images/process/quality-inspection.jpg" alt="Yenileme ve Restorasyon" loading="lazy">
+                    </div>
+                    <div class="about-content" data-aos="fade-left">
+                        <span class="section-subtitle">Yenileme & Restorasyon</span>
+                        <h2 class="section-title">Bina Modernizasyonu</h2>
+                        <p class="about-text">
+                            Mevcut yapıların modernizasyonu, tarihi yapı restorasyonu ve sismik güçlendirme.
+                            Yapılarınızın değerini artıran profesyonel çözümler.
+                        </p>
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Bina Modernizasyonu</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Tarihi Yapı Restorasyonu</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Sismik Güçlendirme</span>
+                            </div>
+                        </div>
+                        <div class="about-cta">
+                            <a href="iletisim.html" class="btn btn-primary">Teklif Alın</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="contact-cta-section">
+            <div class="container">
+                <div class="contact-cta-content" data-aos="fade-up">
+                    <span class="section-subtitle">İletişime Geçin</span>
+                    <h2 class="section-title">Projenizi Birlikte Hayata Geçirelim</h2>
+                    <p class="section-description">Ücretsiz danışmanlık için hemen iletişime geçin.</p>
+                    <div class="contact-cta-buttons">
+                        <a href="iletisim.html" class="btn btn-secondary btn-lg">Ücretsiz Teklif Alın</a>
+                        <a href="tel:+905001234567" class="btn btn-outline-light btn-lg">Hemen Arayın</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="nav-logo"><a href="index.html"><span class="logo-text">KARA İNŞAAT</span><span
+                                class="logo-subtitle">Mühendislik</span></a></div>
+                    <p class="footer-description">2009 yılından bu yana Türkiye'nin en prestijli inşaat projelerine imza
+                        atıyoruz.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                                </path>
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Hızlı Bağlantılar</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="projelerimiz.html">Projelerimiz</a></li>
+                        <li><a href="hizmetler.html">Hizmetler</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Hizmetlerimiz</h3>
+                    <ul class="footer-links">
+                        <li><a href="#ticari">Ticari Yapılar</a></li>
+                        <li><a href="#konut">Lüks Konut Projeleri</a></li>
+                        <li><a href="#altyapi">Altyapı Mühendisliği</a></li>
+                        <li><a href="#yonetim">Proje Yönetimi</a></li>
+                        <li><a href="#yenileme">Yenileme & Restorasyon</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">İletişim</h3>
+                    <div class="footer-contact-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg><span>Maslak, Sarıyer, İstanbul</span></div>
+                    <div class="footer-contact-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg><a href="tel:+905001234567">+90 (500) 123 45 67</a></div>
+                    <div class="footer-contact-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg><a href="mailto:info@karainsaat.com">info@karainsaat.com</a></div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© <span id="currentYear">2024</span> Kara İnşaat Mühendislik. Tüm hakları
+                    saklıdır.</p>
+                <div class="footer-legal"><a href="#">Gizlilik Politikası</a><a href="#">Kullanım Şartları</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
